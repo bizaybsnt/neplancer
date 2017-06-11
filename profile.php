@@ -10,7 +10,7 @@ if(isset($_POST['submit']))
 
 	 $funObj->flush_table();
 	 $funObj->table = "freelancer";
-	 $funObj->data = array("
+	 $funObj->data = array("wew
 }
 
 ?>
