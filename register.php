@@ -21,7 +21,7 @@ else
  $funObj->flush_table();
  $funObj->table = "user_account";
  $funObj->data = array("user_name"=>$username, "password"=>$password,"email"=>$email,"first_name"=>$fname,"last_name"=>$lname,"user_type"=>$usertype);
- $funObj->insert();
+  $funObj->insert();
 
 
 
@@ -49,7 +49,13 @@ $user = $funObj->fetch_assoc($res);
 	{
 		?>
 		<form action=<?php echo "profile.php?id=".$user['id']."&user=freelancer" ?> method="POST">
-		Enter certificate you obtain 
+		<b>Personal Information</b> </br>
+		Address <input type="text" name="location"></br>
+		Describe Yourself<br/>
+		<textarea name="overview" rows="5" cols="20"></textarea><br/>
+		<br/>
+
+		<b>Certification Detail</b> <br/>
 		Name of Cerificate <input type="text" name="cname"/></br>
 		Provider Name <input type="text" name="pname"/></br>
 		About Certificate<input type="text" name="desc"/></br>
@@ -68,12 +74,10 @@ $user = $funObj->fetch_assoc($res);
 
 		<form action=<?php echo "profile.php?id=".$user['id']."&user=company" ?> method="POST">
 		COmpany 
-	<!-- 	Name of Cerificate <input type="text" name="cname"/></br>
-		Provider Name <input type="text" name="pname"/></br>
-		About Certificate<input type="text" name="desc"/></br>
-		Date Earned <input type="text" name="edate"></br>
+		Name of company <input type="text" name="cname"/></br>
+		company location <input type="text" name="location"/></br>
 
-		<input type="submit" name="submit" value="submit"> -->
+		<input type="submit" name="submit" value="submit"> 
 
 		</form>
 

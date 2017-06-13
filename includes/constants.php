@@ -2,5 +2,5 @@
 	define( "HOST", "localhost" );
 	define( "USER", "root" );
 	define( "PASS", "" );
-	define( "DATABASENAME", "Neplancer" );
+	define( "DATABASENAME", "Neplancer2" );
 ?>
